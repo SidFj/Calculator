@@ -1,0 +1,19 @@
+while True:
+    s = input("Знак (&,-,|,^,|=): ")
+    if s == '0':
+        break
+    z = input('A=')
+    y = input('B=')
+    a = set (z)
+    b = set (y)
+    if s in ('&', '-', '|', '^','|='):
+        if s == '&':
+            print(a&b)
+        elif s == '-':
+            print(a-b)
+        elif s == '|':
+            print(a|b)
+        elif s == '^':
+            print(a^b)
+        elif s == '|=':
+            print(a.update(b))
